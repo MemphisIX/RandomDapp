@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Coinflip</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./web3.min.js"></script>
+    <script type="text/javascript" src="./abi.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Coinflip dApp</h1>
+        <p class="lead">Flip your coin on the blockchain, double your money!</p>
+      </div>
+    </div>
+    <div class="container">
+      <div>
+        <h2>Enter bet amount (In ETH)</h2>
+        <div class="input-group mb-3">
+          <input type="number" class="form-control" id="bet_input" placeholder="Bet amount" >
+        </div>
+        <button type="button" id="place_bet_button" class="btn btn-primary">Place Bet</button>
+
+      </div>
+      <h2>Top up the contract (In ETH)</h2>
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" id="top_up_input" placeholder="Top Up Amount" >
+      </div>
+      <button type="button" id="top_up_button" class="btn btn-primary">Top Up</button>
+
+
+      <div>
+        <h2>Your result!</h2>
+        <div>
+          Operation Result: <span id="result_output"></span>
+        </div>
+        <div>
+          Contract Balance: <span id="balance_output"></span>
+        </div>
+
+      </div>
+    </div>
+
+
+  </body>
+</html>
