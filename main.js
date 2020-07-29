@@ -11,6 +11,11 @@ $(document).ready(function() {
     $("#place_bet_button").click(placeBet)
     $("#top_up_button").click(topUp)
     //*fetchAndDisplay()
+    //create variable for contract address balance
+    var contract_balance = web3.eth.getBalance("your contract address");
+    //create an element in HTML with id
+    //add the id of the HTML element below
+    $("#yourHTMLelementid").html(contract_balance);
 });
 
 
